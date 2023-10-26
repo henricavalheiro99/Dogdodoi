@@ -1,0 +1,341 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.4s;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-cor-fundo: #FAFBFF;
+    --cor-texto: #424E66;
+}
+
+.topo{
+    background-color: var(--cor-topo);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    padding-left: 20px;
+}
+
+.navega nav{
+    padding-right: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+
+nav a:hover{
+    padding: 5px;
+    transition: 0.6s;
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #ff00a6, #f74ce6);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+   }
+   
+   button:hover {
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #da05ac66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+/* footer */
+
+.baixo{
+   background-color: var(--cor-topo);
+   background-image: url(../img/whats.png);
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-position-x: 98%;
+   background-position-y: 80%;
+   padding: 20px;
+}
+
+.centro{
+   text-align: center;
+}   
+
+.logof{
+    padding-bottom: 10px;
+}
+
+/* main */
+
+.s1{
+    background-image: url("../img/Banner.png");
+    height: calc(100vh - 116px);
+    /* a subtração é feita com a soma do número multiplicado e da cima e embaixo (76+20.2) */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* quando se trabalha com colunas o eixo X e Y invertem */
+    
+    align-items: center;
+    gap: 20px;
+}
+
+.especialistas{
+    color: var(--cor-principal);
+    font-size: 3em;
+    padding-top: 80px;
+}
+
+.cuidados{
+    color: var(--cor-preta);
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.s2{
+    background-color: var(--cor-branca);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+.esquerda{
+    padding-left: 40px;
+}
+
+.bem-vindo{
+    color: var(--cor-principal);
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.ola{
+    color: var(--cor-preta);
+    font-size: 22px;
+}
+
+.oferecemos{
+    color: var(--cor-texto);
+    font-size: 22px;
+}
+
+.s3{
+    background-color: var(--cor-cor-fundo);
+}
+
+.ccima{
+    text-align: center;
+    padding: 40px;
+}
+
+.nb{
+    color: var(--cor-principal);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.baixoo{
+    color: var(--cor-preta);
+    font-size: 22px;
+}
+
+.bbaixo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon{
+    padding-bottom: 10px;
+}
+
+.icon:hover{
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.texto{
+    color: var(--cor-principal);
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+
+.s4{
+    background-color: var(--cor-branca);
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position-x: 8%;
+}
+
+.qcima{
+    text-align: center;
+    padding: 40px;
+}
+
+.marque{
+    color: var(--cor-preta);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.consulte{
+    color: var(--cor-texto);
+    font-size: 22px;
+}
+
+.container{
+    margin-left: 460px;
+    padding-bottom: 40px;
+}
+
+.singup {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1.5em;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: var(--cor-branca);
+    box-shadow: 16px 16px 32px #c8c8c8,
+          -16px -16px 32px #fefefe;
+    border-radius: 8px;
+  }
+  
+  .inputBox,
+  .inputBox1 {
+    position: relative;
+    width: 250px;
+  }
+  
+  .inputBox input,
+  .inputBox1 input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .inputBox span,
+  .inputBox1 span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+  
+  .inputBox input:valid~span,
+  .inputBox input:focus~span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  .inputBox1 input:valid~span,
+  .inputBox1 input:focus~span {
+    transform: translateX(156px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  .inputBox input:valid,
+  .inputBox input:focus,
+  .inputBox1 input:valid,
+  .inputBox1 input:focus {
+    border: 2px solid #000;
+    border-radius: 8px;
+  }
+  
+  .enter {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 3em;
+  }
+  
+  .enter:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
